@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+         <add id="Codilar_Marketplace::Marketplace" title="Marketplace" module="Codilar_Marketplace" sortOrder="10" resource="Codilar_Marketplace::create"/>
+        <add id="Codilar_Marketplace::product" title="Manage Product" module="Codilar_Marketplace" sortOrder="1" parent="Codilar_Marketplace::Marketplace" action="marketplace/product" resource="Codilar_Marketplace::product"/>
+        <add id="Codilar_Marketplace::seller" title="Manage Seller" module="Codilar_Marketplace" sortOrder="1" parent="Codilar_Marketplace::Marketplace" action="marketplace/seller" resource="Codilar_Marketplace::seller"/>
+        <add id="Codilar_Marketplace::commission" title="Manage Commission" module="Codilar_Marketplace" sortOrder="1" parent="Codilar_Marketplace::Marketplace" action="marketplace/commission" resource="Codilar_Marketplace::commission"/>
+        <add id="Codilar_Marketplace::transaction" title="Manage Orders" module="Codilar_Marketplace" sortOrder="1" parent="Codilar_Marketplace::Marketplace" action="marketplace/orders" resource="Codilar_Marketplace::transaction"/>
+    </menu>
+</config>

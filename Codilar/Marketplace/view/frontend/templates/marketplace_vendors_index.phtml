@@ -1,0 +1,24 @@
+<?php
+/**
+*@var Codilar\Marketplace\Block\Vendors\Index $block;
+*
+*/
+?>
+<h1>Marketplace</h1>
+<?php $vendors = $block->getVendors(); ?>
+<?php foreach($vendors as $vendor){ ?>
+<div class="card" style="width: 18rem;">
+    <!--<img class="card-img-top"  src="holder.js/200x250?theme=thumb"  alt="Card image cap">-->
+    <div class="card-body">
+        <h5 class="card-title"><?php echo $vendor['user_name']; ?></h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href= /mage/marketplace/vendors/profile/shop/<?php echo $vendor['shop_url']; ?>>Visit Shop</a>
+    </div>
+</div>
+<?php } ?>
+
+
+
+
+
+

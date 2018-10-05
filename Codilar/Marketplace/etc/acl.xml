@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+        <resource id="Magento_Backend::admin">
+             <resource id="Codilar_Marketplace::Marketplace" title="Marketplace Management" sortOrder="10" >
+                    <resource id="Codilar_Marketplace::product" title="Manage Product" sortOrder="10" />
+                    <resource id="Codilar_Marketplace::seller" title="Manage Sellers" sortOrder="10" />
+                    <resource id="Codilar_Marketplace::commission" title="Manage Commission" sortOrder="11" />
+                    <resource id="Codilar_Marketplace::transaction" title="Manage Orders" sortOrder="12" />
+             </resource>
+        </resource>
+        </resources>
+    </acl>
+</config>
+
+

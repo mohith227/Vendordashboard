@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <remove id="Magento_Catalog::catalog" />
+            <add id="Codilar_Vendorplace::vendorproduct" title="Products" module="Codilar_Vendorplace" sortOrder="10" resource="Codilar_Vendorplace::vendorproduct" />
+            <add id="Codilar_Vendorplace::manageproduct" title="Manage Products" module="Codilar_Vendorplace" sortOrder="1" parent="Codilar_Vendorplace::vendorproduct" action="vendorplace/product" resource="Codilar_Vendorplace::manageproduct"/>
+            <add id="Codilar_Vendorplace::addproduct" title="Add Products" module="Codilar_Vendorplace" sortOrder="2" parent="Codilar_Vendorplace::vendorproduct" action="catalog/product/new/set/4/type/simple" resource="Codilar_Vendorplace::addproduct"/>
+
+            <add id="Codilar_Vendorplace::vendoraccount" title="Account" module="Codilar_Vendorplace" sortOrder="10" resource="Codilar_Vendorplace::vendoraccount"/>
+            <add id="Codilar_Vendorplace::vendorprofile" title="Profile" module="Codilar_Vendorplace" sortOrder="1" parent="Codilar_Vendorplace::vendoraccount" action="vendorplace/seller/profile" resource="Codilar_Vendorplace::vendorprofile"/>
+
+            <add id="Codilar_Vendorplace::vendororder" title="Sales" module="Codilar_Vendorplace" sortOrder="10" resource="Codilar_Vendorplace::vendororder"/>
+            <add id="Codilar_Vendorplace::orders" title="Orders" module="Codilar_Vendorplace" sortOrder="1" parent="Codilar_Vendorplace::vendororder" action="vendorplace/orders" resource="Codilar_Vendorplace::orders"/>
+
+    </menu>
+   
+</config>

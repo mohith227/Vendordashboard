@@ -1,0 +1,20 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <preference for="Magento\Core\Model\UrlInterface" type="Magento\Core\Model\Url" />
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="vendor_post_listing_data_source" xsi:type="string">Codilar\Marketplace\Model\ResourceModel\Vendor\Grid\Collection</item>
+                <!--<item name="sales_order_grid_data_source" xsi:type="string">Codilar\Marketplace\Model\ResourceModel\Order\Grid\Collection</item>-->
+                <item name="seller_commission_data_source" xsi:type="string">Codilar\Marketplace\Model\ResourceModel\Vendor\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Codilar\Marketplace\Model\ResourceModel\Vendor\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">marketplace_vendors</argument>
+            <argument name="eventPrefix" xsi:type="string">codilar_marketplace_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">codilar_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Codilar\Marketplace\Model\ResourceModel\Vendor</argument>
+        </arguments>
+    </type>
+</config>

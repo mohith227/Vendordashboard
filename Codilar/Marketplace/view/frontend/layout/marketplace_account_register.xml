@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page layout="2columns-left" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Marketplace</title>
+        <css src="Codilar_Marketplace::css/bootstrap.css" />
+        <script src="Codilar_Marketplace::js/bootstrap.min.js"/>
+    </head>
+    <body>
+        <referenceBlock name="catalog.compare.sidebar" remove="true" />
+        <referenceBlock name="wishlist_sidebar" remove="true" />
+        <referenceBlock name="advanced-search-link" remove="true"/>
+        <referenceContainer name="content">
+            <block class="Codilar\Marketplace\Block\Account\Register" name="marketplace.register" template="Codilar_Marketplace::marketplace_register.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,77 @@
+<?php
+/** @var \Codilar\Marketplace\Block\Account\Create $block */
+?>
+<html>
+<body>
+<div class="column-main">
+    <div style="float: left;" class="block-content" aria-labelledby="block-customer-login-heading">
+        <form class="form form-login" action= '<?php echo $block->getFormAction(); ?>' method="post" id="" novalidate="novalidate">
+            <input name="form_key" type="hidden" value="LhM0LbLzmRT5UR92">
+            <fieldset class="fieldset login" data-hasrequired="* Required Fields">
+                <div class="field note">Seems like u want to become a vendor</div>
+                <div class="field required">
+                    <label for="username" class="label"><span>User Name</span></label>
+                    <div class="control">
+                        <input name="username" type="text" autocomplete="off" class="input-text" id="username" title="username" data-validate="{required:true}" aria-required="true">
+                    </div>
+                        <label for="firstname" class="label"><span>First Name</span></label>
+                        <div class="control">
+                            <input name="firstname" type="text" autocomplete="off" class="input-text" id="firstname" title="firstname" data-validate="{required:true}" aria-required="true">
+                        </div>
+                        <label for="lastname" class="label"><span>Last Name</span></label>
+                        <div class="control">
+                            <input name="lastname" type="text" autocomplete="off" class="input-text" id="lastname" title="lastname" data-validate="{required:true}" aria-required="true">
+                        </div>
+                    <label class="label" for="email"><span>Email Id</span></label>
+                    <div class="control">
+                        <input name="email"  autocomplete="off" id="email" type="text" class="input-text" title="email" data-validate="{required:true, 'validate-email':true}" aria-required="true">
+                    </div>
+                </div>
+                <div class="field required">
+                    <label for="password" class="label"><span>Password</span></label>
+                    <div class="control">
+                        <input name="password" type="text" autocomplete="off" class="input-text" id="pass" title="Password" data-validate="{required:true}" aria-required="true">
+                    </div>
+                </div>
+                <div class="field required">
+                    <label class="label" for="shopname"><span>Shop Name</span></label>
+                    <div class="control">
+                        <input name="shopname" value="" autocomplete="off" id="shopname" type="text" class="input-text" title="shopname" data-validate="{required:true, 'validate-email':true}" aria-required="true">
+                    </div>
+                </div>
+                <div class="field required">
+                    <label for="shopurl" class="label"><span>Shop Url</span></label>
+                    <div class="control">
+                        <input name="shopurl" type="text" autocomplete="off" class="input-text" id="shopurl" title="shopurl" data-validate="{required:true}" aria-required="true">
+                    </div>
+                </div>
+                    <div class="field image">
+                        <label for="image" class="label"><span><?php
+                                echo __('Image') ?></span></label>
+                        <div class="control">
+                            <input type="file" name="image" id="image" title="<?php echo __('Image') ?>" class="input-text">
+                        </div>
+                    </div>
+                
+                <div class="actions-toolbar">
+                    <div class="primary"><button type="submit" class="action login primary" name="send" id="send2" ><span>Register</span></button></div>
+                </div>
+                <div class="actions-toolbar">
+                    <div class="primary"><a class="btn-dark" href="/mage/admin">Have an account?</a></div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
